@@ -1,6 +1,6 @@
-<h1 align="center">📚 Assistente de Estudos</h1>
+<h1>📚 Assistente de Estudos</h1>
 
-<p align="center">
+<p>
   <b>O Assistente de Estudos é uma aplicação web desenvolvida com HTML, CSS e JavaScript que utiliza a API da IA Gemini para ajudar estudantes com dúvidas de Matemática e Língua Portuguesa. Com um layout moderno, suporte a modo escuro e design responsivo, o app é fácil de usar tanto em computadores quanto em dispositivos móveis.</b><br>
   Feito com 💖 usando HTML, CSS, JavaScript e a API Gemini.
 </p>
