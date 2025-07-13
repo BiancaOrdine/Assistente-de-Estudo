@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Assistente de Estudos</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <nav class="nav">
+      <img src="./assets/logo.png" alt="Logo Assistente de Estudos" />
+      <button class="menu" aria-label="Abrir Menu"></button>
+      <ul class="nav-list">
+        <li class="tag"><a href="#form">Assistente IA</a></li>
+        <li class="tag"><a href="https://www.todamateria.com.br/exercicios/" target="_blank">Exercícios</a></li>
+        <li class="tag"><a href="https://www.geogebra.org/" target="_blank">Ferramentas</a></li>
+        <li class="tag"><a href="#footer_content">Contato</a></li>
+        <li class="tag theme-button-wrapper">
+          <button id="theme-switch" aria-label="Alternar tema">
+            <i class="fas fa-moon"></i>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <div>
+        <h2 class="title">Assistente de Estudos</h2>
+        <p>Faça perguntas sobre Matemática e Língua Portuguesa!</p>
+        <form id="form">
+          <input id="apiKey" type="password" placeholder="Informe a API KEY do Gemini" required />
+          <select id="materiaSelect" required>
+            <option value="">Selecione uma matéria</option>
+            <option value="Matematica">Matemática</option>
+            <option value="Portugues">Língua Portuguesa</option>
+          </select>
+          <input id="questionInput" type="text" placeholder="Ex: Explique a regra de três simples..." required />
+          <button class="button_perguntar" id="askButton" type="submit">Perguntar</button>
+        </form>
+        <div id="aiResponse" class="hidden">
+          <div class="response-content"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div id="footer_content">
+      <div id="footer_contacts">
+        <img class="img_footer" src="./assets/logo.png" alt="Logo" width="100px" />
+        <div id="footer_social_media">
+          <a href="https://github.com/BiancaOrdine" class="footer-link" id="GitHub" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/biancaordine" class="footer-link" id="Linkedin" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+
+      <ul class="footer-list">
+        <li>
+          <h3>Conteúdos Educacionais</h3>
+        </li>
+        <li><a href="https://www.todamateria.com.br/lingua-portuguesa/" class="footer-link" target="_blank">Língua
+            Portuguesa</a></li>
+        <li><a href="https://www.todamateria.com.br/matematica/" class="footer-link" target="_blank">Matemática</a></li>
+        <li><a href="https://www.ismart.org.br/2023/07/17/metodos-de-estudo-para-aplicar-em-casa/" class="footer-link"
+            target="_blank">Dicas de Estudo</a></li>
+      </ul>
+
+      <ul class="footer-list">
+        <li>
+          <h3>Simulados</h3>
+        </li>
+        <li><a href="https://descomplica.com.br/simulado" class="footer-link" target="_blank">Descomplica</a></li>
+        <li><a href="https://stoodi.com.br/" class="footer-link" target="_blank">Stoodi</a></li>
+        <li><a href="https://www.qconcursos.com" class="footer-link" target="_blank">Qconcursos</a></li>
+      </ul>
+
+      <div id="footer_subscribe">
+        <h3>Subscribe</h3>
+        <p>Insira seu e-mail para receber notificações sobre nossas novidades</p>
+        <div id="input_group">
+          <input type="email" id="email" />
+          <button><i class="fa-regular fa-envelope"></i></button>
+        </div>
+      </div>
+    </div>
+    <div id="footer_copyright">
+      <span class="creative-commons"><b>CC</b></span>
+      <b>2025 - Bianca Ordine.</b>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/showdown@2.1.0/dist/showdown.min.js"></script>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
